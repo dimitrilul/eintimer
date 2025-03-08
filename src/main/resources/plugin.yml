@@ -1,0 +1,11 @@
+name: EinTimer
+version: 'EA.1.0_DE'
+main: com.dimitrighg.EinTimer
+api-version: '1.21'
+authors: [ DimitriGHG ]
+description: Deutsche Version vom EinTimer Plugin.
+website: https://dev.dimitrighg.de
+commands:
+  timer:
+    description: Steuert den Timer.
+    usage: /timer>
