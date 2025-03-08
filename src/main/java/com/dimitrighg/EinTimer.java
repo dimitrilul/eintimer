@@ -69,7 +69,7 @@ public class EinTimer extends JavaPlugin implements Listener, TabCompleter {
 
     private void toggleDeathPause(CommandSender sender) {
         deathPauseEnabled = !deathPauseEnabled;
-        sender.sendMessage("If dead, pause: " + (deathPauseEnabled ? "§aAn" : "§cAus"));
+        sender.sendMessage("If dead, pause: " + (deathPauseEnabled ? "§aAn" : "§cAus")); //German: Wenn gestorben, pausieren:
     }
 
     @Override
@@ -111,7 +111,7 @@ public class EinTimer extends JavaPlugin implements Listener, TabCompleter {
         long elapsedMillis = isPaused ? pausedTime : currentTime - startTime;
         String timeString = formatTime(elapsedMillis);
         String coloredMessage = isPaused
-                ? "<bold><color:#ff0000>The Timer is paused...</color></bold>"
+                ? "<bold><color:#ff0000>The Timer is paused...</color></bold>" //German: Der Timer ist pausiert...
                 : createColoredMessage(timeString, currentTime);
 
         for (Player player : Bukkit.getOnlinePlayers()) {
